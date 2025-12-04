@@ -26,9 +26,9 @@ I purchased [this](https://www.amazon.com/dp/B0FP5QYZM9) board from Amazon, and 
 - [Waveshare's Guide](https://www.waveshare.com/wiki/ESP32-S3-AUDIO-Board)
 - [ESP32-S3 Docs](https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/)
 
-To do this yourself, follow the [installation](https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/get-started/linux-macos-setup.html) guide for ESP-IDF and then start with a [demo](https://files.waveshare.com/wiki/ESP32-S3-AUDIO-Board/ESP32-S3-AUDIO-Board-Demo.zip) from Waveshare.  I had little success working with the Arduino code, but your mileage may vary.
+To do this yourself, follow the [installation](https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/get-started/index.html#installation) guide for ESP-IDF and then start with a [demo](https://files.waveshare.com/wiki/ESP32-S3-AUDIO-Board/ESP32-S3-AUDIO-Board-Demo.zip) from Waveshare.  I had little success working with the Arduino code, but your mileage may vary.
 
 ## Future Ideas with this board
 - There is space & circuitry for a battery, allowing this to run on the go
 - My code does not utilize WiFi or Bluetooth at all
-- Waveshare sells boards with [LCD displays](https://www.waveshare.com/wiki/ESP32-S3-Touch-LCD-1.85C) built in -- also on [Amazon](https://www.amazon.com/Waveshare-ESP32-S3-1-85inch-Development-Bluetooth/dp/B0F18D8S27?s=electronics)
+- Waveshare sells boards with [LCD displays](https://www.waveshare.com/wiki/ESP32-S3-Touch-LCD-1.85C) built in - also on [Amazon](https://www.amazon.com/Waveshare-ESP32-S3-1-85inch-Development-Bluetooth/dp/B0F18D8S27?s=electronics)
