@@ -1,3 +1,4 @@
+#include "bootloader_random.h"
 #include "esp_err.h"
 #include "esp_log.h"
 #include "esp_log_level.h"
@@ -13,7 +14,6 @@
 #include "tca9555_driver.h"
 #include <stdint.h>
 #include <stdio.h>
-#include <stdlib.h>
 
 static char* TAG = "app main";
 
@@ -58,7 +58,8 @@ void app_main() {
 	tca9555_driver_init();
 	esp_sdcard_init("/sdcard", 10);
 	Audio_Play_Init();
-	Volume_Adjustment(50);
+	Volume_Adjustment(70);
+	bootloader_random_enable();
 	esp_log_level_set("*", ESP_LOG_INFO);
 	RGB_Example();
 	set_rgb_color(RGB_COLOR_BLUE);
@@ -71,7 +72,7 @@ void app_main() {
 	} else {
 		dir = "/sdcard";
 	}
-    ESP_LOGI(TAG, "Chosen dir: %s", dir);
+	ESP_LOGI(TAG, "Chosen dir: %s", dir);
 
 	load_music(dir);
 	play_music();
